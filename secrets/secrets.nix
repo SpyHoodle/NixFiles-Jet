@@ -12,4 +12,5 @@ in
   "mjolnir.age".publicKeys = users ++ systems;
   "tailscale.age".publicKeys = users ++ systems;
   "syncplay.age".publicKeys = users ++ systems;
+  "silverbullet.age".publicKeys = users ++ systems;
 }

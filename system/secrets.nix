@@ -20,6 +20,11 @@
       owner = "mjolnir";
       group = "mjolnir";
     };
+    silverbullet = {
+      file = ../secrets/silverbullet.age;
+      owner = "silverbullet";
+      group = "silverbullet";
+    };
     syncplay = {
       file = ../secrets/syncplay.age;
     };

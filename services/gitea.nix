@@ -1,4 +1,4 @@
-{ config, domains, ... }:
+{ domains, ... }:
 
 {
   services.gitea = {

@@ -40,7 +40,7 @@
               git = "git.${root_domain}";
               ssh = "${hostname}.${hostgroup}.${tailnet}";
               auth = "auth.${root_domain}";
-              syncv3 = "syncv3.${root_domain}";
+              notes = "notes.${root_domain}";
             };
           };
           modules = [
@@ -49,7 +49,6 @@
             ./services/website.nix
             ./services/matrix-nginx.nix
             ./services/matrix-synapse.nix
-            ./services/matrix-sliding-sync.nix
             ./services/matrix-authentication-service.nix
             ./services/mjolnir.nix
             ./services/gitea.nix
@@ -57,6 +56,7 @@
             ./services/syncplay.nix
             ./services/postgresql.nix
             ./services/tailscale.nix
+            ./services/silverbullet.nix
 
             # Custom Modules
             ./modules/matrix-authentication-service.nix
