@@ -12,9 +12,6 @@
       owner = "matrix-authentication-service";
       group = "matrix-authentication-service";
     };
-    matrix-sliding-sync = {
-      file = ../secrets/matrix-sliding-sync.age;
-    };
     mjolnir = {
       file = ../secrets/mjolnir.age;
       owner = "mjolnir";

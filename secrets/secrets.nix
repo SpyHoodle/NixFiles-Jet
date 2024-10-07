@@ -7,7 +7,6 @@ let
 in
 {
   "matrix-authentication-service.age".publicKeys = users ++ systems;
-  "matrix-sliding-sync.age".publicKeys = users ++ systems;
   "matrix-synapse.age".publicKeys = users ++ systems;
   "mjolnir.age".publicKeys = users ++ systems;
   "tailscale.age".publicKeys = users ++ systems;

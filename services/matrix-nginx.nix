@@ -3,7 +3,6 @@
 let
   clientConfig = { 
     "m.homeserver".base_url = "https://${domains.root}";
-    #"org.matrix.msc3575.proxy".url = "https://${domains.syncv3}";
     "org.matrix.msc2965.authentication" = {
       "issuer" = "https://${domains.auth}";
       "account" = "https://${domains.auth}/account";
@@ -95,19 +94,6 @@ in
           }
         ];
       };
-      /*"${domains.syncv3}" = {
-        enableACME = true;
-        forceSSL = true;
-
-        locations."/_matrix/client/unstable/org.matrix.msc3575/sync" = {
-          proxyPass = "http://[::1]:8010";
-          proxyWebsockets = true;
-        };
-
-        extraConfig = ''
-          large_client_header_buffers 4 64k;
-        '';
-      };*/
     };
   };
 }
